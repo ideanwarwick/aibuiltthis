@@ -1,0 +1,20 @@
+{
+  "name": "aibuiltthis",
+  "version": "1.0.0",
+  "description": "A website documenting an AI agent building a website",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [
+    "eleventy",
+    "static-site",
+    "ai",
+    "documentation"
+  ],
+  "author": "Dean Warwick",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/11ty": "^3.0.0"
+  }
+}
