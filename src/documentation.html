@@ -8,6 +8,37 @@ permalink: /documentation/
 
 <p>This page documents every step taken to build this website using only an AI agent.</p>
 
+<h2>Understanding the Tech Stack</h2>
+
+<h3>What is Eleventy?</h3>
+<p>Eleventy (11ty) is a <strong>static site generator</strong> — a build tool that takes our source files and converts them into final HTML. It's not a service or hosting platform — just software that runs during deployment.</p>
+
+<h3>How It Works</h3>
+
+<ol>
+  <li><strong>Source Files:</strong> We create templates in <code>src/</code></li>
+  <li><strong>Eleventy Builds:</strong> Processes templates, wraps content in layouts</li>
+  <li><strong>Output:</strong> Generates final HTML in <code>_site/</code> folder</li>
+  <li><strong>GitHub Pages:</strong> Hosts the built HTML files</li>
+</ol>
+
+<h3>Why Use Eleventy?</h3>
+
+<ul>
+  <li><strong>Reusable layouts:</strong> Write navigation and footer once</li>
+  <li><strong>Clean URLs:</strong> <code>documentation.html</code> becomes <code>/documentation/</code></li>
+  <li><strong>Template variables:</strong> Easy page titles and content management</li>
+  <li><strong>No JavaScript:</strong> Pure static HTML output</li>
+</ul>
+
+<h3>The Complete Stack</h3>
+
+<ol>
+  <li><strong>Eleventy:</strong> Builds the site (development tool)</li>
+  <li><strong>GitHub:</strong> Stores code and runs builds (version control + CI/CD)</li>
+  <li><strong>GitHub Pages:</strong> Hosts the built HTML (web hosting)</li>
+</ol>
+
 <h2>Phase 1: Planning &amp; Setup</h2>
 
 <h3>Step 1: Domain Research ✓</h3>
@@ -38,7 +69,7 @@ permalink: /documentation/
 <h3>Step 4: Tech Stack Finalized ✓</h3>
 <p><strong>Date:</strong> January 17, 2026, 14:21 NZDT</p>
 
-<p>Final decision: Eleventy (11ty) + GitHub + Stormkit</p>
+<p>Final decision: Eleventy (11ty) + GitHub + GitHub Pages</p>
 
 <p><strong>Rationale:</strong> GitHub enables fully browser-based development, automatic deployment, and commit history serves as build documentation.</p>
 
@@ -71,9 +102,20 @@ permalink: /documentation/
   <li><code>src/documentation.html</code> - This page!</li>
 </ul>
 
-<h2>Phase 2: Deployment (Coming Soon)</h2>
+<h3>Step 8: Hosting Decision ✓</h3>
+<p><strong>Date:</strong> January 17, 2026, 14:40 NZDT</p>
 
-<p>Next steps: Connect repository to Stormkit and deploy to aibuiltthis.site.</p>
+<p>Decided to use <strong>GitHub Pages</strong> instead of Stormkit - completely free, already integrated, and simpler deployment.</p>
+
+<h3>Step 9: Deployment Setup ✓</h3>
+<p><strong>Date:</strong> January 17, 2026, 14:43 NZDT</p>
+
+<p>Created GitHub Actions workflow to automatically build and deploy the site on every commit. Dean enabled GitHub Pages in repository settings.</p>
+
+<h3>Step 10-11: Build Errors &amp; Fixes ✓</h3>
+<p><strong>Date:</strong> January 17, 2026, 14:50 - 14:58 NZDT</p>
+
+<p>First build failed due to missing <code>package-lock.json</code> (fixed by removing cache). Second build failed due to typo in package name: <code>@11ty/11ty</code> instead of <code>@11ty/eleventy</code> (fixed).</p>
 
 <h2>View the Source</h2>
 
