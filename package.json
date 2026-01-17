@@ -15,6 +15,6 @@
   "author": "Dean Warwick",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/11ty": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0"
   }
 }
