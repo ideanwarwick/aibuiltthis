@@ -1,8 +1,0 @@
----
-layout: null
-title: Robots txt
-permalink: /robots.txt
----
-
-User-agent: *
-Allow: /
