@@ -1,5 +1,6 @@
 ---
-title: Robots TXT
+layout: null
+title: Robots txt
 permalink: /robots.txt
 ---
 
