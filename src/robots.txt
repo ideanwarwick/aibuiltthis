@@ -1,2 +1,7 @@
+---
+title: Robots TXT
+permalink: /robots.txt
+---
+
 User-agent: *
 Allow: /
