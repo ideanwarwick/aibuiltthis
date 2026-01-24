@@ -93,6 +93,7 @@ nav a:hover {
   display: inline-block;
   position: relative;
   margin-right: 1.5rem;
+  padding-bottom: 0.5rem; /* Add padding below to create hover area */
 }
 
 .nav-label {
@@ -108,9 +109,8 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% - 0.3rem); /* Overlap slightly with label for easier hover */
   left: 0;
-  margin-top: 0.5rem;
   background: #fff;
   border: 1px solid #000;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -124,7 +124,7 @@ nav a:hover {
 
 .dropdown-content a {
   display: block;
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1.2rem; /* Increase padding for easier clicking */
   margin: 0;
   border: none;
   border-bottom: 1px solid #eee;
